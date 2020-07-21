@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardCornerRadius="20dp"
+       android:padding="10dp">
+
+       <RelativeLayout
+           android:id="@+id/relativeLayout"
+           android:padding="10dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/imageView"
+               android:layout_width="160dp"
+               android:layout_height="160dp"
+               android:layout_centerVertical="true"
+               android:layout_marginStart="2dp"
+               android:layout_marginLeft="2dp"
+               android:layout_marginTop="2dp"
+               android:layout_marginEnd="2dp"
+               android:layout_marginRight="2dp"
+               android:layout_marginBottom="2dp"
+               android:padding="10dp" />
+
+           <TextView
+               android:id="@+id/textViewHead"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="20dp"
+               android:layout_toRightOf="@+id/imageView"
+               android:padding="10dp"
+               android:text="Heading"
+               android:textAppearance="@style/TextAppearance.AppCompat.Large"
+               android:textSize="22sp"
+               app:fontFamily="cursive" />
+
+           <TextView
+               android:id="@+id/textViewDes"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/textViewHead"
+               android:layout_marginLeft="10dp"
+               android:layout_toRightOf="@+id/imageView"
+               android:padding="10dp"
+               android:text="Description"
+               android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+           <TextView
+               android:id="@+id/textViewCost"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/textViewDes"
+               android:layout_marginLeft="10dp"
+               android:layout_toRightOf="@+id/imageView"
+               android:padding="20dp"
+               android:text="cost"
+               android:textAppearance="@style/TextAppearance.AppCompat.Large"
+               android:textSize="20sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/textViewBook"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/textViewDes"
+               android:layout_marginRight="0dp"
+               android:layout_toRightOf="@+id/textViewCost"
+               android:background="#F585C0"
+               android:padding="10dp"
+               android:text="Book"
+               android:textAppearance="@style/TextAppearance.AppCompat.Large"
+               android:textSize="20sp" />
+       </RelativeLayout>
+   </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
